@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="contact.html" target="_self">Contact Me</a></li>
+                <li><a href="register.html" target="_blank">Register</a></li>
+                <li><a href="login.html" target="_blank">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Would you like to be a part of our community?</h2>
+        <h4>Then, register with us and you'd be a recipient of our monthly newsletter!</h4>
+
+        <fieldset>
+            <form action="">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="fname" id="fname">FIRST NAME</label>
+                            <input type="text" name="fname" id="fname" size="60%" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lname" id="lname">LAST NAME</label>
+                            <input type="text" name="lname" id="lname" size="60%" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="phone" id="phone">PHONE NUMBER</label>
+                            <input type="text" name="phone" id="phone" size="60%" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="gender">GENDER</label>
+                            <br>
+                            <select name="gender" id="gender" required>
+                                <option value="gender">Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="country">COUNTRY</label>
+                            <br>
+                            <select name="country" id="country" required>
+                                <option value="country">Select country</option>
+                                <option value="country">Nigeria</option>
+                                <option value="country">Ghana</option>
+                                <option value="country">United States of America</option>
+                                <option value="country">United Kingdom</option>
+                                <option value="country">South Korea</option>
+                                <option value="country">Germany</option>
+                                <option value="country">France</option>
+                                <option value="country">Japan</option>
+                                <option value="country">Mauritius</option>
+                                <option value="country">Kenya</option>
+                                <option value="country">Others</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="state">STATE/PROVINCE</label>
+                            <input type="text" name="state" id="state" size="60%" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email" id="email">EMAIL</label>
+                            <input type="email" name="email" id="email" size="60%" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" size="60%"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                required required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password"> CONFIRM PASSWORD</label>
+                            <input type="password" name="password" id="password" size="60%"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                required required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="SUBMIT">
+                        </td>
+                    </tr>
+                </table>
+
+            </form>
+        </fieldset>
+    </main>
+    <footer>
+        <p id="copy"> &copy; All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
