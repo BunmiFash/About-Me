@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: o;
+    padding: 0;
 }
 
 body {
@@ -17,7 +17,6 @@ header {
     background-color: #d13ca4;
      position: fixed;
     top: 0;
-
     width: 100%;
 }
 
@@ -33,11 +32,14 @@ header nav ul li {
     margin: 10px;
 }
 
-a {
+ nav li a:link {
     text-decoration: none;
     color: #ffea9e;
     padding: 15px;
     font-size: 18px;
+}
+nav li a:visited {
+    color: #ffea9e;
 }
 
 nav li a:hover {
@@ -47,21 +49,27 @@ nav li a:hover {
     padding: 10px;
 }
 
-a:active {
+nav li a:active {
     background-color: #fe3a9e;
 
 }
 
-a:visited {
-    color: #ffea9e;
-}
+
 
 footer {
     background-color: #d13ca4;
     margin-top: auto;
     text-align: center;
     color: #ffea9e;
+
 }
+footer a {
+  color: #ffea9e;
+  text-decoration: none;
+  background-color: #fe3a9e;
+  text-align: center;
+}
+
 
 /**MAIN TABLE */
 table {
@@ -185,6 +193,7 @@ select {
 /* sTYLING BUTTON FOR LOG IN PAGE */
 button {
     border-radius: 20px;
+    color: #ffea9e;
     border: none;
     background-color: #d13ca4;
     width: 69%;
